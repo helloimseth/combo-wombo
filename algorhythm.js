@@ -9,8 +9,6 @@ playRounds(log, tier);
 
 var combos = Object.keys(flattenObject(log)).map(function(x){return x.split('.');});
 
-console.log(combos)
-
 function logGame(match, outcome, state) {
   state[match] = true;
 }
