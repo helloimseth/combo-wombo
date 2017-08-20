@@ -1,7 +1,8 @@
 'use strict';
 
-const p = 4,
-      n = 5;
+const p = 3,
+      n = 2,
+      delimiter = '-';
 
 var log = {}, tier = 0, combo = JSON.stringify(createCombo()), keys = Object.keys(JSON.parse(combo));
 
@@ -14,7 +15,7 @@ function logGame(match, outcome, state) {
 }
 
 function getKey (home, away) {
-  return home + '-' + away;
+  return home + delimiter + away;
 }
 
 function checkGame(match, state) {
